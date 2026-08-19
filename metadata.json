@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Rasika and Amal Rag Wedding ",
+  "description": "designed by Ramees",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

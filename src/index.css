@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Fleur+De+Leah&family=Style+Script&family=Manjari:wght@400;700&family=Gayathri:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-cursive: "Arizonia", cursive;
+  --font-fleur: "Fleur De Leah", cursive;
+  --font-malayalam: "Manjari", "Gayathri", sans-serif;
+  --font-malayalam-art: "Gayathri", "Manjari", sans-serif;
+  
+  --color-purple-50: #faf4fa;
+  --color-purple-100: #f7eaf7;
+  --color-purple-200: #f1d4f2;
+  --color-purple-300: #e4bee5;
+  --color-purple-400: #cf9bcf;
+  --color-purple-500: #b36fb4;
+  --color-purple-600: #9a3da3;
+  --color-purple-700: #84318d;
+  --color-purple-800: #6f2378;
+  --color-purple-850: #5f1b67;
+  --color-purple-900: #521659;
+  --color-purple-950: #330a38;
+
+  --color-gold-50: #fcfbf7;
+  --color-gold-100: #f6f1e5;
+  --color-gold-200: #ebdfc4;
+  --color-gold-300: #ddc89c;
+  --color-gold-400: #cca771;
+  --color-gold-500: #b8874c;
+  --color-gold-600: #9d6d37;
+  --color-gold-700: #7a5127;
+  --color-gold-800: #573719;
+  --color-gold-900: #3a220e;
+  
+  --color-champagne-50: #fdfcf9;
+  --color-champagne-100: #faf6f0;
+  --color-champagne-200: #f3eae0;
+  --color-champagne-300: #e7d8cb;
+  --color-champagne-400: #d5beae;
+  --color-champagne-500: #be9f8c;
+}
+
+@layer utilities {
+  /* Custom elegant animations and effects */
+  .purple-gradient {
+    background: linear-gradient(135deg, #6f2378 0%, #9a3da3 50%, #330a38 100%);
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #b8874c 0%, #ddc89c 50%, #b8874c 100%);
+  }
+  
+  .gold-text-gradient {
+    background: linear-gradient(135deg, #9d6d37 0%, #ddc89c 50%, #7a5127 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .rose-gradient {
+    background: linear-gradient(135deg, #be9f8c 0%, #faf6f0 50%, #be9f8c 100%);
+  }
+
+  /* Custom scrollbar for guestbook */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #faf6f0;
+    border-radius: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #d5beae;
+    border-radius: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #be9f8c;
+  }
+}
+
+html, body {
+  scroll-behavior: smooth;
+  background-color: #faf6f0;
+  color: #2c2724;
+  font-family: var(--font-sans);
+}
