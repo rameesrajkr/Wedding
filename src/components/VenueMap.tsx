@@ -8,8 +8,8 @@ export default function VenueMap() {
   const [copied, setCopied] = useState(false);
   const [showQRModal, setShowQRModal] = useState(false);
 
-  const address = "Peringottukara Somasekara Temple, Somasekara Temple Road, Peringottukara, Thrissur, Kerala 680565";
-  const mapsUrl = "https://maps.app.goo.gl/1rasDFWUwdYAsDRCA";
+  const address = "Sree Narayana Hall, Somasekara Temple Road, Peringottukara, Thrissur, Kerala 680565";
+  const mapsUrl = "https://maps.app.goo.gl/APMUJMQMZr6MfKnU7";
   const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(mapsUrl)}`;
 
   const handleCopyAddress = () => {
@@ -109,7 +109,7 @@ export default function VenueMap() {
             <div className="flex-1 rounded-2xl overflow-hidden relative border border-stone-100">
               <iframe
                 title="Venue Location Map"
-                src="https://maps.google.com/maps?q=Peringottukara%20Somasekara%20Temple&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=10.4187871,76.1371167+(Sree+Narayana+Hall)&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
